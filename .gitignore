@@ -1,0 +1,16 @@
+# Git ignore file
+
+# Ignore the specific directory
+data/VLKEB/mmkb_images/
+
+# Common ignored files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv
+env/
+venv/
+ENV/
+.DS_Store 

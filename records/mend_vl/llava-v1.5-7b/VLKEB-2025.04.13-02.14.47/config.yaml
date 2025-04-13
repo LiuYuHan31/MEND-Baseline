@@ -1,0 +1,25 @@
+aux_model:
+  act: relu
+  hidden_dim: null
+  init: id
+  lr: 1.0e-06
+  n_hidden: 1
+  norm: true
+  rank: 1920
+  shared: true
+edit_lr_lr: 0.0001
+edit_model_name: llava-v1.5-7b
+edit_modules:
+- language_model.model.layers.29.mlp.gate_proj
+- language_model.model.layers.29.mlp.up_proj
+- language_model.model.layers.29.mlp.down_proj
+- language_model.model.layers.30.mlp.gate_proj
+- language_model.model.layers.30.mlp.up_proj
+- language_model.model.layers.30.mlp.down_proj
+- language_model.model.layers.31.mlp.gate_proj
+- language_model.model.layers.31.mlp.up_proj
+- language_model.model.layers.31.mlp.down_proj
+gen_lambda: 0.1
+init_edit_lr: 0.0001
+loc_lambda: 0.1
+relia_lambda: 0.1
